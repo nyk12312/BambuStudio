@@ -80,6 +80,8 @@ set(SLIC3R_GUI_SOURCES
     GUI/Widgets/SideTools.hpp
     GUI/Widgets/WebView.cpp
     GUI/Widgets/WebView.hpp
+    GUI/PrintFinsPoC.cpp
+    GUI/PrintFinsPoC.hpp
     GUI/Widgets/ErrorMsgStaticText.cpp
     GUI/Widgets/ErrorMsgStaticText.hpp
     GUI/Widgets/MultiNozzleSync.hpp

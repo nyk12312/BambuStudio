@@ -1,5 +1,6 @@
 #include "libslic3r/Technologies.hpp"
 #include "GUI_App.hpp"
+#include "PrintFinsPoC.hpp"
 #include "GUI_Init.hpp"
 #include "GUI_ObjectList.hpp"
 #include "GUI_Factories.hpp"
@@ -1430,6 +1431,7 @@ void GUI_App::post_init()
         }
     }
     BOOST_LOG_TRIVIAL(info) << "finished post_init";
+    CallAfter([this] { run_printfins_poc(*plater()); });
 #ifdef _WIN32
     // Sets window property to mainframe so other instances can indentify it.
     OtherInstanceMessageHandler::init_windows_properties(mainframe, m_instance_hash_int);
