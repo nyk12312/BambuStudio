@@ -19,3 +19,5 @@ Applies to all agent work in this repository.
 8. **Checkpoints:** Commits, pushes, PR publication, releases, and merges require explicit maintainer approval. Before an approved checkpoint, verify branch/base, inspect staged paths, and run `git diff --cached --check`.
 
 9. **Privacy and staging:** Stage explicit files only; never use `git add .` or `git add -A`. Exclude credentials, personal paths, local profiles, logs, build artifacts, and unrelated files. Preserve vendored source integrity and third-party licenses.
+
+10. **Documentation for agents:** Read relevant `README.md` and `docs/` before changing behavior. Keep AI-readable documentation accurate in the same change as new or modified features, architecture, APIs, algorithms, slicer parameters, integration behavior, tests, and known limitations. For PrintFins, explain deviations from upstream and preserve vendor/source provenance. Add focused documentation only where useful; do not create empty templates or duplicate instructions.
